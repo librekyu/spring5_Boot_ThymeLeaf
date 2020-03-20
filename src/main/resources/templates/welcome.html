@@ -1,10 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Welcome</title>
 </head>
 <body>
-Welcome.
+    <h1>Welcome.</h1>
+    <!-- 변수식 -->
+    <p th:text="${new java.util.Date().toString()}"></p>
+    <!-- 메시지식 -->
+    <p th:text="#{test}"></p>
 </body>
 </html>
